@@ -28,7 +28,6 @@
           </ul>
         </nav>
         <!-- MAIN AVATAR, INFO -->
-
         <div class="header__body">
           <div class="header__photo">
             <img src="img/avatar.jpg" height="250" alt="avatar">
@@ -39,20 +38,10 @@
             <div class="header__subtext">Student of pre-frontend RS school course</div>
           </div>
         </div>
-
       </div>
     </header>
 
     <main class="main">
-      <section class="contacts">
-        <div class="contacts__container _container">
-          <div class="contacts__body">
-            <ol class="contacts__list">
-              <li class="contacts__item"></li>
-            </ol>
-          </div>
-        </div>
-      </section>
       <section class="about">
         <div class="about__container _container">
           <div class="about__body">
@@ -67,38 +56,59 @@
           </div>
         </div>
       </section>
-      <section class="contacts">
-        <div class="contacts__container _container">
-          <h2 class="contacts__title title">Contacts</h2>
-          <ul class="contacts__list _list">
-            <li class="contacts__item _item">Adress:<a href="https://goo.gl/maps/hT4iuEoQxTR8T8yk9" target="_blank">
-                Mogilev,
-                Belarus</a></li>
-            <li class="contacts__item _item">Telergam:<a href="https://t.me/Yelltiy" target="_blank">@Yelltiy</a></li>
-            <li class="contacts__item _item">Github:<a href="https://github.com/Lights0n" target="_blank">Lights0n</a>
-            </li>
-            <li class="contacts__item _item">Email:<a href="mailto:lyadouskiy@gmail.com"
-                target="_blank">lyadouskiy@gmail.com</a></li>
-            <li class="contacts__item _item">Discord:<a href="https://discord.com/users/6162"
-                target="_blank">@Lights0n#6162</a></li>
-          </ul>
+      <!-- start of triple merge block -->
+      <div class="skills-educ-contacts">
+        <div class="skills-educ-contacts__container _container">
+          <section class="contacts">
+            <div class="contacts__container _container">
+              <h2 class="contacts__title title">Contacts</h2>
+              <ul class="contacts__list _list">
+                <li class="contacts__item _item">Adress:<a href="https://goo.gl/maps/hT4iuEoQxTR8T8yk9" target="_blank">
+                    Mogilev,
+                    Belarus</a></li>
+                <li class="contacts__item _item">Telergam:<a href="https://t.me/Yelltiy" target="_blank">@Yelltiy</a>
+                </li>
+                <li class="contacts__item _item">Github:<a href="https://github.com/Lights0n"
+                    target="_blank">Lights0n</a>
+                </li>
+                <li class="contacts__item _item">Email:<a href="mailto:lyadouskiy@gmail.com"
+                    target="_blank">lyadouskiy@gmail.com</a></li>
+                <li class="contacts__item _item">Discord:<a href="https://discord.com/users/6162"
+                    target="_blank">@Lights0n#6162</a></li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="skills">
+            <div class="skills__container _container">
+              <h2 class="skills__title title" id="skills">Skills</h2>
+              <ul class="skills__list _list">
+                <li class="skills__item _item">HTML5</li>
+                <li class="skills__item _item">CSS3</li>
+                <li class="skills__item _item">SCSS</li>
+                <li class="skills__item _item">BEM</li>
+                <li class="skills__item _item">Git</li>
+                <li class="skills__item _item">JavaScript</li>
+                <li class="skills__item _item">Figma</li>
+              </ul>
+            </div>
+          </section>
+          <section class="education">
+            <div class="education__container _container">
+              <div class="education__body">
+                <div class="education__title title">Education</div>
+                <div class="education__university">Belarusian Trade and Economics University of Consummer Cooperation
+                </div>
+                <div class="education__spec">Marketing. Promotional activities</div>
+                <div class="education__eng">English lvl: A2</div>
+              </div>
+            </div>
+          </section>
         </div>
+      </div>
+      <!-- END of triple merge block -->
       </section>
-      <section class="skills">
-        <div class="skills__container _container">
-          <h2 class="skills__title title" id="skills">Skills</h2>
-          <ul class="skills__list _list">
-            <li class="skills__item _item">HTML5</li>
-            <li class="skills__item _item">CSS3</li>
-            <li class="skills__item _item">SCSS</li>
-            <li class="skills__item _item">BEM</li>
-            <li class="skills__item _item">Git</li>
-            <li class="skills__item _item">JavaScript</li>
-            <li class="skills__item _item">Figma</li>
-          </ul>
-        </div>
-      </section>
-      <div class="section code">
+      <div class="code">
         <div class="code__container _container">
           <div class="code__body">
             <h2 class="code__title title">Code example</h2>
@@ -123,8 +133,8 @@ tabs.addEventListener('click', e => {
    changeClass(e.target);
    for (let i = 0; i < content.length; i++) {
       content[i].classList.remove('active');
-      // если значение дата-атрибута кнопки и значение дата-атрибута 
-      // контента одинаковы, то вешаем класс active на нужный контент
+      // если зна дата-атh кнопки и знаx дата-атрибута 
+      // контента одинаковы, вешаем active на нужный
       if (content[i].dataset.content === currTab) {
          content[i].classList.add('active');
       }
@@ -135,15 +145,7 @@ tabs.addEventListener('click', e => {
           </div>
         </div>
       </div>
-      <section class="education">
-        <div class="education__container _container">
-          <div class="education__body"></div>
-          <div class="education__title title">Education</div>
-          <div class="education__university">Belarusian Trade and Economics University of Consummer Cooperation</div>
-          <div class="education__spec">Marketing. Promotional activities</div>
-          <div class="education__eng">English lvl: A2</div>
-        </div>
-      </section>
+
       <!-- PROJECTS starts -->
       <section class="projects">
         <div class="projects__container _container">
