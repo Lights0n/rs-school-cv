@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:regular&display=swap&subset=cyrillic-ext"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="img/favicon.ico">
+  <title>Stanislau Kh CV rs-schools</title>
+
+</head>
+<link
+  href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+  rel="stylesheet" />
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container _container">
+        <!-- NAVIGATION LIST -->
+        <nav class="header__navi">
+          <ul class="header__list">
+            <li class="header__list-item"><a href="#">Home</a></li>
+            <li class="header__list-item"><a href="#">Skills</a></li>
+            <li class="header__list-item"><a href="#">Examples</a></li>
+          </ul>
+        </nav>
+        <!-- MAIN AVATAR, INFO -->
+
+        <div class="header__body">
+          <div class="header__photo">
+            <img src="img/avatar.jpg" height="250" alt="avatar">
+          </div>
+          <div class="header__title">
+            <div class="header__cv">The resume/CV</div>
+            <h1 class="header__name">Stanislau Khrukin</h1>
+            <div class="header__subtext">Student of pre-frontend RS school course</div>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="contacts">
+        <div class="contacts__container _container">
+          <div class="contacts__body">
+            <ol class="contacts__list">
+              <li class="contacts__item"></li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about__container _container">
+          <div class="about__body">
+            <h2 class="about__title title">Some words about me</h2>
+            <div class="about__text text">
+              <p>I'm eager to learn. I like to face new challenges and figure out how things work. I do love to read
+                books, play vallwyball. I lead a healhy lifestyle.
+              <p>Can look on things from the different angle and attentive to detail at work</p>
+              <p>I took part in the second European Games MINSK 2019 as a volunteer.
+                From that times I do love all the stuff wich is bound up with volunteering :)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts__container _container">
+          <h2 class="contacts__title title">Contacts</h2>
+          <ul class="contacts__list _list">
+            <li class="contacts__item _item">Adress:<a href="https://goo.gl/maps/hT4iuEoQxTR8T8yk9" target="_blank">
+                Mogilev,
+                Belarus</a></li>
+            <li class="contacts__item _item">Telergam:<a href="https://t.me/Yelltiy" target="_blank">@Yelltiy</a></li>
+            <li class="contacts__item _item">Github:<a href="https://github.com/Lights0n" target="_blank">Lights0n</a>
+            </li>
+            <li class="contacts__item _item">Email:<a href="mailto:lyadouskiy@gmail.com"
+                target="_blank">lyadouskiy@gmail.com</a></li>
+            <li class="contacts__item _item">Discord:<a href="https://discord.com/users/6162"
+                target="_blank">@Lights0n#6162</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="skills">
+        <div class="skills__container _container">
+          <h2 class="skills__title title">Skills</h2>
+          <ul class="skills__list _list">
+            <li class="skills__item _item">HTML5</li>
+            <li class="skills__item _item">CSS3</li>
+            <li class="skills__item _item">SCSS</li>
+            <li class="skills__item _item">BEM</li>
+            <li class="skills__item _item">Git</li>
+            <li class="skills__item _item">JavaScript</li>
+            <li class="skills__item _item">Figma</li>
+          </ul>
+        </div>
+      </section>
+      <div class="section code">
+        <div class="code__container _container">
+          <div class="code__body">
+            <h2 class="code__title title">Code example</h2>
+            <code da="" class="code__code">
+<pre>
+const tabs = document.getElementById('tabs')
+const content = document.querySelectorAll('.content');
+console.log(tabs);
+
+const changeClass = el => {
+   console.log(el);
+   for (let i = 0; i < tabs.children.length; i++) {
+      tabs.children[i].classList.remove('active');
+   }
+   el.classList.add('active');
+
+}
+
+tabs.addEventListener('click', e => {
+   // отлавливаем значение дата-атрибута кнопки
+   const currTab = e.target.dataset.btn;
+   changeClass(e.target);
+   for (let i = 0; i < content.length; i++) {
+      content[i].classList.remove('active');
+      // если значение дата-атрибута кнопки и значение дата-атрибута 
+      // контента одинаковы, то вешаем класс active на нужный контент
+      if (content[i].dataset.content === currTab) {
+         content[i].classList.add('active');
+      }
+   }
+});
+</pre>
+            </code>
+          </div>
+        </div>
+      </div>
+      <section class="education">
+        <div class="education__container _container">
+          <div class="education__body"></div>
+          <div class="education__title title">Education</div>
+          <div class="education__university">Belarusian Trade and Economics University of Consummer Cooperation</div>
+          <div class="education__spec">Marketing. Promotional activities</div>
+          <div class="education__eng">English lvl: A2</div>
+        </div>
+      </section>  
+      <!-- PROJECTS starts -->
+      <section class="projects">
+        <div class="projects__container _container">
+          <div class="projects__body">
+            <h2 class="projects__title title">My projects</h2>
+          </div>
+        </div>
+      </section>
+      <!-- PROJECTS ends -->
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container _container">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="https://t.me/Yelltiy">
+              <img src="img/footer/telegram.svg" height="40" alt="">
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="mailto:lyadouskiy@gmail.com">
+              <img src="img/footer/Gmail.svg" height="30" alt="">
+            </a>
+          </li>
+          <li class="footer__item">
+            2022
+          </li>
+          <li class="footer__item">
+            <a href="https://rs.school/js/">
+              <img src="img/footer/logo-rs.svg" height="40" alt="">
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="https://github.com/Lights0n">
+              <img src="img/footer/github.svg" height="40" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+
+</html>
