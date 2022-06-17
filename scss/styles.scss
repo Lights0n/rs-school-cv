@@ -336,7 +336,6 @@ $color-two: #688e43;
   &__html {
     background: url(../img/skills/html.svg) no-repeat;
     background-size: 25px;
-    background-color: #688e43;
   }
 
   // .list-skills__css
@@ -386,6 +385,7 @@ $color-two: #688e43;
 
   &__body {
     max-width: 300px;
+    line-height: 120%;
   }
 
   // .education__title
