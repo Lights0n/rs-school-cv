@@ -76,6 +76,7 @@ $color-two: #688e43;
 .text {
   line-height: 1.2rem;
 }
+
 // header
 .header {
   // .header__container
@@ -223,7 +224,9 @@ $color-two: #688e43;
   // .about__text
 
   &__text {
-    padding: 15px 0px 0px 50px;
+    @media (min-width: 425.98px) {
+      padding: 15px 0px 0px 50px;
+    }
   }
 }
 
@@ -242,59 +245,137 @@ $color-two: #688e43;
   }
 }
 
-// ._list
+.skills-educ-contacts {
+  // .skills-educ-contacts__container
 
-._list {
+  &__container {
+  }
 }
 
-// ._item
-
-._item {
-}
 .contacts {
   // .contacts__container
-
   &__container {
   }
 
   // .contacts__title
-
   &__title {
   }
 
   // .contacts__list
-
   &__list {
   }
+}
 
-  // .contacts__item
-
+.list-contacts {
+  // .list-contacts__adress
+  li {
+    padding-bottom: 12px;
+  }
   &__item {
+    padding: 0px 0px 0px 30px;
+  }
+  &__adress {
+    background: url(../img/contacts/gps.svg) no-repeat;
+    background-size: 25px;
+  }
+
+  // .list-contacts__telegram
+
+  &__telegram {
+    background: url(../img/contacts/telegram.svg) no-repeat;
+    background-size: 25px;
+  }
+
+  // .list-contacts__github
+
+  &__github {
+    background: url(../img/contacts/github.svg) no-repeat;
+    background-size: 25px;
+  }
+
+  // .list-contacts__email
+
+  &__email {
+    background: url(../img/contacts/email.svg) no-repeat;
+    background-size: 25px;
+  }
+
+  // .list-contacts__discord
+
+  &__discord {
+    background: url(../img/contacts/discord.svg) no-repeat;
+    background-size: 25px;
   }
 }
-.title {
-}
+
 .skills {
   // .skills__container
-
   &__container {
+    display: flex;
+    flex-direction: column;
   }
 
   // .skills__title
-
   &__title {
   }
 
   // .skills__list
-
   &__list {
   }
+}
 
-  // .skills__item
+.list-skills {
+  li {
+    padding: 0px 0px 12px 30px;
+    a {
+      cursor: default;
+      pointer-events: none;
+    }
+  }
+  // .list-skills__html
+  &__html {
+    background: url(../img/skills/html.svg) no-repeat;
+    background-size: 25px;
+    background-color: #688e43;
+  }
 
-  &__item {
+  // .list-skills__css
+  &__css {
+    background: url(../img/skills/css.svg) no-repeat;
+    background-size: 25px;
+  }
+
+  // .list-skills__scss
+  &__scss {
+    background: url(../img/skills/scss.svg) no-repeat;
+    background-size: 25px;
+  }
+
+  // .list-skills__bem
+  &__bem {
+    background: url(../img/skills/checkbox.svg) no-repeat;
+    background-size: 25px;
+  }
+
+  // .list-skills__git
+  &__git {
+    background: url(../img/skills/git.svg) no-repeat;
+    background-size: 25px;
+  }
+
+  // .list-skills__js
+  &__js {
+    background: url(../img/skills/javascript.svg) no-repeat;
+    background-size: 25px;
+  }
+
+  // .list-skills__figma
+  &__figma {
+    background: url(../img/skills/figma.svg) no-repeat;
+    background-size: 25px;
   }
 }
+
 .education {
   // .education__container
 

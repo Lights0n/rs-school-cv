@@ -236,8 +236,10 @@ main {
   padding: 40px 0px 0px 0px;
 }
 
-.about__text {
-  padding: 15px 0px 0px 50px;
+@media (min-width: 425.98px) {
+  .about__text {
+    padding: 15px 0px 0px 50px;
+  }
 }
 
 .skills-educ-contacts__container {
@@ -257,6 +259,94 @@ main {
 
 .skills-educ-contacts__container section {
   padding: 0px 0px 22px 0px;
+}
+
+.list-contacts li {
+  padding-bottom: 12px;
+}
+
+.list-contacts__item {
+  padding: 0px 0px 0px 30px;
+}
+
+.list-contacts__adress {
+  background: url(../img/contacts/gps.svg) no-repeat;
+  background-size: 25px;
+}
+
+.list-contacts__telegram {
+  background: url(../img/contacts/telegram.svg) no-repeat;
+  background-size: 25px;
+}
+
+.list-contacts__github {
+  background: url(../img/contacts/github.svg) no-repeat;
+  background-size: 25px;
+}
+
+.list-contacts__email {
+  background: url(../img/contacts/email.svg) no-repeat;
+  background-size: 25px;
+}
+
+.list-contacts__discord {
+  background: url(../img/contacts/discord.svg) no-repeat;
+  background-size: 25px;
+}
+
+.skills__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.list-skills li {
+  padding: 0px 0px 12px 30px;
+}
+
+.list-skills li a {
+  cursor: default;
+  pointer-events: none;
+}
+
+.list-skills__html {
+  background: url(../img/skills/html.svg) no-repeat;
+  background-size: 25px;
+  background-color: #688e43;
+}
+
+.list-skills__css {
+  background: url(../img/skills/css.svg) no-repeat;
+  background-size: 25px;
+}
+
+.list-skills__scss {
+  background: url(../img/skills/scss.svg) no-repeat;
+  background-size: 25px;
+}
+
+.list-skills__bem {
+  background: url(../img/skills/checkbox.svg) no-repeat;
+  background-size: 25px;
+}
+
+.list-skills__git {
+  background: url(../img/skills/git.svg) no-repeat;
+  background-size: 25px;
+}
+
+.list-skills__js {
+  background: url(../img/skills/javascript.svg) no-repeat;
+  background-size: 25px;
+}
+
+.list-skills__figma {
+  background: url(../img/skills/figma.svg) no-repeat;
+  background-size: 25px;
 }
 
 .education__body {
