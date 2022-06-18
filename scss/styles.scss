@@ -309,6 +309,7 @@ $color-two: #688e43;
 }
 
 .skills {
+  justify-self: center;
   // .skills__container
   &__container {
     display: flex;
@@ -468,9 +469,15 @@ $color-two: #688e43;
     text-align: center;
     flex-direction: column;
     padding: 15px;
-    min-width: 260px;
-    @media (max-width: 767.98px) {
-      flex: 1 0 20%;
+
+    @media (max-width: 900.98px) {
+      flex: 1 1 50%;
+    }
+    @media (max-width: 600.98px) {
+      flex: 0 1 100%;
+    }
+    @media (max-width: 424.98px) {
+      padding: 15px 0;
     }
   }
 
@@ -480,7 +487,7 @@ $color-two: #688e43;
 
   &__image-link {
     display: block;
-    padding: 0px 0 60% 0px;
+    padding: 0 0 60% 0;
   }
 
   &__image {
@@ -518,6 +525,7 @@ $color-two: #688e43;
   // .footer__item
   &__item {
     cursor: pointer;
+    display: block;
     &:not(:last-child) {
       padding: 0px 30px 0px 0px;
       @media (max-width: 424.98px) {
