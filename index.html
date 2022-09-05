@@ -119,16 +119,16 @@
             <h2 class="code__title title">Code example</h2>
             <code class="code__code">
 <pre class="code-pre">
-  <span class="code__func">function</span> <span class="code__func-name">getLocalStorageLanguage</span><span class="code__yel-brackets">()</span> {
-    <span class="code__if">if</span> (<span class="code__variable">localStorage</span>.<span class="code__func-name">getItem</span>(<span class="code__str">'language'</span>) == <span class="code__str">'ru'</span>) {
-      langRu.checked = <span class="code__bool">true</span>
-      <span class="code__func-name">settingsToRu()</span>
-    }  
-    <span class="code__if">else if</span> (<span class="code__variable">localStorage</span>.<span class="code__func-name">getItem</span>(<span class="code__str">'language'</span>) == <span class="code__str">'en'</span>) {
-      langEng.checked = <span class="code__bool">true</span>
-      <span class="code__func-name">settingsToEng()</span>
-    } 
+<span class="code__func">function</span> <span class="code__func-name">getLocalStorageLanguage</span><span class="code__yel-brackets">()</span> {
+  <span class="code__if">if</span> (<span class="code__variable">localStorage</span>.<span class="code__func-name">getItem</span>(<span class="code__str">'language'</span>) == <span class="code__str">'ru'</span>) {
+    <span class="code__variable2">langRu</span>.checked = <span class="code__bool">true</span>
+    <span class="code__func-name">settingsToRu()</span>
+  }  
+  <span class="code__if">else if</span> (<span class="code__variable">localStorage</span>.<span class="code__func-name">getItem</span>(<span class="code__str">'language'</span>) == <span class="code__str">'en'</span>) {
+    <span class="code__variable2">langEng</span>.checked = <span class="code__bool">true</span>
+    <span class="code__func-name">settingsToEng()</span>
   } 
+} 
 </pre>
             </code>
           </div>

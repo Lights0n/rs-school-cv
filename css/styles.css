@@ -372,6 +372,7 @@ main {
 }
 
 .code .code-pre {
+  padding: 7px;
   background-color: #201d1da6;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -418,12 +419,16 @@ main {
   color: lightblue;
 }
 
+.code__variable2 {
+  color: #11aee2;
+}
+
 .code__str {
   color: #ff812b;
 }
 
 .code__bool {
-  color: #104a85;
+  color: #619edb;
 }
 
 .code__code {

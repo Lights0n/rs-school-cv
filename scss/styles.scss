@@ -425,6 +425,7 @@ $color-two: #688e43;
   }
 
   .code-pre {
+    padding: 7px;
     background-color: #201d1da6;
     backdrop-filter: blur(5px);
     border-radius: 10px;
@@ -461,13 +462,16 @@ $color-two: #688e43;
   &__variable {
     color: lightblue;
   }
+  &__variable2 {
+    color: rgb(17, 174, 226);
+  }
 
   &__str {
     color: #ff812b;
   }
 
   &__bool {
-    color: rgb(16, 74, 133);
+    color: rgb(97, 158, 219);
   }
 
   // .code__title
