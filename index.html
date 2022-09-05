@@ -24,7 +24,7 @@
           <ul class="header__list">
             <li class="header__list-item" id="home"><a href="#home">Home</a></li>
             <li class="header__list-item"><a href="#skills">Skills</a></li>
-            <li class="header__list-item"><a href="#">Examples</a></li>
+            <li class="header__list-item"><a href="#projects">Projects</a></li>
           </ul>
         </nav>
         <!-- MAIN AVATAR, INFO -->
@@ -104,6 +104,8 @@
                 </div>
                 <div class="education__spec">Marketing. Promotional activities</div>
                 <div class="education__eng">English lvl: A2</div>
+
+                <!-- todo implement certificate -->
               </div>
             </div>
           </section>
@@ -115,47 +117,54 @@
         <div class="code__container _container">
           <div class="code__body">
             <h2 class="code__title title">Code example</h2>
-            <code da="" class="code__code">
-<pre>
-const tabs = document.getElementById('tabs')
-const content = document.querySelectorAll('.content');
-console.log(tabs);
-
-const changeClass = el => {
-   console.log(el);
-   for (let i = 0; i < tabs.children.length; i++) {
-      tabs.children[i].classList.remove('active');
-   }
-   el.classList.add('active');
-
-}
-
-tabs.addEventListener('click', e => {
-   // отлавливаем значение дата-атрибута кнопки
-   const currTab = e.target.dataset.btn;
-   changeClass(e.target);
-   for (let i = 0; i < content.length; i++) {
-      content[i].classList.remove('active');
-      // если зна дата-атh кнопки и знаx дата-атрибута 
-      // контента одинаковы, вешаем active на нужный
-      if (content[i].dataset.content === currTab) {
-         content[i].classList.add('active');
-      }
-   }
-});
+            <code class="code__code">
+<pre class="code-pre">
+  <span class="code__func">function</span> <span class="code__func-name">getLocalStorageLanguage</span><span class="code__yel-brackets">()</span> {
+    <span class="code__if">if</span> (<span class="code__variable">localStorage</span>.<span class="code__func-name">getItem</span>(<span class="code__str">'language'</span>) == <span class="code__str">'ru'</span>) {
+      langRu.checked = <span class="code__bool">true</span>
+      <span class="code__func-name">settingsToRu()</span>
+    }  
+    <span class="code__if">else if</span> (<span class="code__variable">localStorage</span>.<span class="code__func-name">getItem</span>(<span class="code__str">'language'</span>) == <span class="code__str">'en'</span>) {
+      langEng.checked = <span class="code__bool">true</span>
+      <span class="code__func-name">settingsToEng()</span>
+    } 
+  } 
 </pre>
             </code>
           </div>
         </div>
       </div>
-
       <!-- PROJECTS starts -->
-      <section class="projects">
+      <section class="projects" id="projects">
         <div class="projects__container _container">
           <div class="projects__header">
             <h2 class="projects__title title">My projects</h2>
           </div>
           <div class="projects__body">
+            <!--  -->
+            <div class="projects__column">
+              <div class="projects__item">
+                <a class="projects__image-link _ibg" href="https://lights0n.github.io/Travel-app/" target="_blank">
+                  <img src="img/projects/travel.jpg" class="projects__image " alt="Travel-app">
+                </a>
+                <a href="" class="projects__name-link">
+                  <h4 class="projects__name">Travel portal website</h4>
+                </a>
+              </div>
+            </div>
+            <!--  -->
+            <div class="projects__column">
+              <div class="projects__item">
+                <a class="projects__image-link _ibg" href="https://lights0n.github.io/RS-stage0-tasks-momentum/"
+                  target="_blank">
+                  <img src="img/projects/momentum.jpg" class="projects__image " alt="momentum-app">
+                </a>
+                <a href="" class="projects__name-link">
+                  <h4 class="projects__name">Momentum application</h4>
+                </a>
+              </div>
+            </div>
+            <!--  -->
             <div class="projects__column">
               <div class="projects__item">
                 <a class="projects__image-link _ibg" href="https://lights0n.github.io/gocorona-website/"
@@ -191,6 +200,9 @@ tabs.addEventListener('click', e => {
                 </a>
               </div>
             </div>
+            <!--  -->
+
+            <!--  -->
           </div>
         </div>
       </section>
