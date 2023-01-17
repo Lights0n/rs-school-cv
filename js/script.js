@@ -13,8 +13,8 @@ saveBtn.addEventListener('click', () => {
   };
   // html2pdf().from(document.body).set(opt).save();
 
-  // html2pdf().from(donloadWrapper).save();
-  html2pdf().from(document.body).set(opt).save();
+  html2pdf().from(donloadWrapper).save();
+  // html2pdf().from(document.body).set(opt).save();
 
 })
 

@@ -109,7 +109,7 @@ $color-two: #688e43;
     gap: 5%;
     height: 100%;
     font-size: 0.8rem;
-    @media (min-width: 768.01px) {
+    @media (min-width: 780.01px) {
       gap: 10%;
     }
   }
@@ -135,7 +135,7 @@ $color-two: #688e43;
     background-color: #ff812b;
     border-radius: 280px 75% 280px 65%;
     flex-wrap: wrap;
-    @media (max-width: 768.01px) {
+    @media (max-width: 780.01px) {
       padding: 5px 0;
     }
     @media (max-width: 425.98px) {
@@ -153,7 +153,7 @@ $color-two: #688e43;
   &__photo {
     img {
       border-radius: 50%;
-      @media (max-width: 768.01px) {
+      @media (max-width: 780.01px) {
         height: 170px;
       }
     }
@@ -166,7 +166,7 @@ $color-two: #688e43;
   &__title {
     h1 {
       font-size: 2rem;
-      @media (max-width: 768.01px) {
+      @media (max-width: 780.01px) {
         font-size: 1.5rem;
       }
       @media (max-width: 424.98px) {
@@ -347,7 +347,7 @@ $color-two: #688e43;
     pointer-events: none;
   }
 
-  @media (max-width: 768.01px) {
+  @media (max-width: 780.01px) {
     padding-bottom: 6px;
   }
 }
@@ -421,7 +421,7 @@ $color-two: #688e43;
     backdrop-filter: blur(5px);
     border-radius: 10px;
     box-shadow: 5px 5px 12px 0px rgb(84, 138, 247);
-    @media (max-width: 768.01px) {
+    @media (max-width: 780.01px) {
       font-size: 0.6rem;
     }
     @media (max-width: 500.98px) {
@@ -530,7 +530,7 @@ $color-two: #688e43;
     display: block;
     padding: 0 0 60% 0;
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.03);
       z-index: 5;
     }
     transition: all 0.3s ease 0s;
@@ -539,10 +539,9 @@ $color-two: #688e43;
   &__image {
     border-radius: 15px;
     &:hover {
-      -webkit-box-shadow: 0px 0px 32px 24px rgba(84, 139, 247, 0.4);
-      -moz-box-shadow: 0px 0px 32px 24px rgba(84, 139, 247, 0.4);
-      box-shadow: 0px 0px 32px 24px rgba(84, 139, 247, 0.4);
+      box-shadow: 0px 0px 20px 4px rgb(149, 184, 255);
     }
+    transition: all 0.3s ease 0s;
   }
 
   &__name-link {
@@ -562,7 +561,7 @@ $color-two: #688e43;
   // .footer__container
   &__container {
     padding-top: 20px;
-    @media (max-width: 768.01px) {
+    @media (max-width: 780.01px) {
       padding-top: 10px;
     }
   }
