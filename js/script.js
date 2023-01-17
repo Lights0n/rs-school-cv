@@ -1,14 +1,22 @@
-// const anchors = document.querySelectorAll('a[href*="#"]')
 
-// for (let anchor of anchors) {
-//   anchor.addEventListener('click', function (e) {
-//     e.preventDefault()
+// https://github.com/eKoopmans/html2pdf.js#getting-started
+const saveBtn = document.querySelector('#download-pdf');
+const donloadWrapper = document.body.cloneNode(true);
+donloadWrapper.querySelector('#projects').remove();
+console.log(donloadWrapper);
+saveBtn.addEventListener('click', () => {
 
-//     const blockID = anchor.getAttribute('href').substr(1)
 
-//     document.getElementById(blockID).scrollIntoView({
-//       behavior: 'smooth',
-//       block: 'start'
-//     })
-//   })
-// }
+  var opt = {
+    filename: 'Front-end developer resume.pdf',
+
+  };
+  // html2pdf().from(document.body).set(opt).save();
+
+  // html2pdf().from(donloadWrapper).save();
+  html2pdf().from(document.body).set(opt).save();
+
+})
+
+
+

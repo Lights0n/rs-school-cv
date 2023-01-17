@@ -59,7 +59,7 @@ body {
 
 /*end of starting*/
 [class*="__container"] {
-  max-width: 1480px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -71,13 +71,13 @@ main {
 }
 
 .title {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 2rem;
-  padding: 0px 0px 15px 0px;
 }
 
 .text {
-  line-height: 1.2rem;
+  line-height: 1.1rem;
+  font-size: 18px;
 }
 
 .header__container {
@@ -87,7 +87,7 @@ main {
 .header__navi {
   background-color: #e6cd54;
   color: #ffffff;
-  padding: 18px;
+  padding: 10px 20px;
   border-radius: 0 0 25px 25px;
 }
 
@@ -101,19 +101,31 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 5%;
   height: 100%;
   font-size: 0.8rem;
 }
 
-@media (min-width: 376px) {
+@media (min-width: 768.01px) {
   .header__list {
     gap: 10%;
-    font-size: inherit;
   }
 }
 
+.header #download-pdf {
+  padding: 2px 5px;
+  background-color: #2b7cff;
+  border-radius: 7px;
+  font-size: 1rem;
+}
+
 .header__body {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin: 10px 0px 0px 0px;
   padding: 20px 0;
   display: -webkit-box;
@@ -128,6 +140,12 @@ main {
   border-radius: 280px 75% 280px 65%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media (max-width: 768.01px) {
+  .header__body {
+    padding: 5px 0;
+  }
 }
 
 @media (max-width: 425.98px) {
@@ -149,7 +167,7 @@ main {
   border-radius: 50%;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768.01px) {
   .header__photo img {
     height: 170px;
   }
@@ -171,7 +189,7 @@ main {
   font-size: 2rem;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768.01px) {
   .header__title h1 {
     font-size: 1.5rem;
   }
@@ -233,7 +251,11 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 40px 0px 0px 0px;
+  padding: 20px 0px 0px 0px;
+}
+
+.about__text {
+  font-size: 18px;
 }
 
 @media (min-width: 425.98px) {
@@ -243,6 +265,7 @@ main {
 }
 
 .skills-educ-contacts__container {
+  font-size: 22px;
   padding: 40px 0px 0px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -261,37 +284,37 @@ main {
   padding: 0px 0px 22px 0px;
 }
 
+.list-contacts__item {
+  background-size: 25px;
+}
+
 .list-contacts li {
   padding-bottom: 12px;
 }
 
 .list-contacts__item {
+  background-repeat: no-repeat;
   padding: 0px 0px 0px 30px;
 }
 
-.list-contacts__adress {
-  background: url(../img/contacts/gps.svg) no-repeat;
-  background-size: 25px;
+.list-contacts__address {
+  background-image: url(../img/contacts/address.svg);
 }
 
 .list-contacts__telegram {
-  background: url(../img/contacts/telegram.svg) no-repeat;
-  background-size: 25px;
+  background-image: url(../img/contacts/telegram.svg);
 }
 
 .list-contacts__github {
-  background: url(../img/contacts/github.svg) no-repeat;
-  background-size: 25px;
+  background-image: url(../img/contacts/github.svg);
 }
 
 .list-contacts__email {
-  background: url(../img/contacts/email.svg) no-repeat;
-  background-size: 25px;
+  background-image: url(../img/contacts/email.svg);
 }
 
 .list-contacts__discord {
-  background: url(../img/contacts/discord.svg) no-repeat;
-  background-size: 25px;
+  background-image: url(../img/contacts/discord.svg);
 }
 
 .skills {
@@ -309,48 +332,56 @@ main {
           flex-direction: column;
 }
 
-.list-skills li {
+.skills__item {
   padding: 0px 0px 12px 30px;
+  background-size: 20px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  font-size: 18px;
 }
 
-.list-skills li a {
+.skills__item a {
   cursor: default;
   pointer-events: none;
 }
 
+@media (max-width: 768.01px) {
+  .skills__item {
+    padding-bottom: 6px;
+  }
+}
+
 .list-skills__html {
-  background: url(../img/skills/html.svg) no-repeat;
-  background-size: 25px;
+  background-image: url(../img/skills/html.svg);
 }
 
 .list-skills__css {
-  background: url(../img/skills/css.svg) no-repeat;
-  background-size: 25px;
+  background-image: url(../img/skills/css.svg);
 }
 
 .list-skills__scss {
-  background: url(../img/skills/scss.svg) no-repeat;
-  background-size: 25px;
+  background-image: url(../img/skills/scss.svg);
 }
 
 .list-skills__bem {
-  background: url(../img/skills/checkbox.svg) no-repeat;
-  background-size: 25px;
+  background-image: url(../img/skills/bem.svg);
 }
 
 .list-skills__git {
-  background: url(../img/skills/git.svg) no-repeat;
-  background-size: 25px;
+  background-image: url(../img/skills/git.svg);
 }
 
 .list-skills__js {
-  background: url(../img/skills/javascript.svg) no-repeat;
-  background-size: 25px;
+  background-image: url(../img/skills/javascript2.svg);
+  background-size: 20px 20px;
+}
+
+.list-skills__ts {
+  background-image: url(../img/skills/typescript.svg);
 }
 
 .list-skills__figma {
-  background: url(../img/skills/figma.svg) no-repeat;
-  background-size: 25px;
+  background-image: url(../img/skills/figma.svg);
 }
 
 .education__body {
@@ -381,7 +412,7 @@ main {
           box-shadow: 5px 5px 12px 0px #548af7;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768.01px) {
   .code .code-pre {
     font-size: 0.6rem;
   }
@@ -517,8 +548,8 @@ main {
 }
 
 .projects__image-link:hover {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   z-index: 5;
 }
 
@@ -547,6 +578,12 @@ main {
 
 .footer__container {
   padding-top: 20px;
+}
+
+@media (max-width: 768.01px) {
+  .footer__container {
+    padding-top: 10px;
+  }
 }
 
 .footer__list {

@@ -10,6 +10,10 @@
   <link rel="icon" href="img/favicon.ico">
   <title>Stanislau Kh CV rs-schools</title>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+    integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </head>
 <link
   href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic"
@@ -25,6 +29,8 @@
             <li class="header__list-item" id="home"><a href="#home">Home</a></li>
             <li class="header__list-item"><a href="#skills">Skills</a></li>
             <li class="header__list-item"><a href="#projects">Projects</a></li>
+            <li class="header__list-item"><button id="download-pdf">Download PDF</button></li>
+
           </ul>
         </nav>
         <!-- MAIN AVATAR, INFO -->
@@ -35,7 +41,7 @@
           <div class="header__title">
             <div class="header__cv">The resume/CV</div>
             <h1 class="header__name">Stanislau Khrukin</h1>
-            <div class="header__subtext">Student of pre-frontend RS school course</div>
+            <div class="header__subtext">Junior JavaScript/Front-end dev</div>
           </div>
         </div>
       </div>
@@ -63,8 +69,8 @@
             <div class="contacts__container _container">
               <h2 class="contacts__title title">Contacts</h2>
               <ul class="contacts__list list-contacts">
-                <li class="list-contacts__item list-contacts__adress">
-                  <a href="https://goo.gl/maps/hT4iuEoQxTR8T8yk9" target="_blank">Adress: Mogilev, Belarus</a>
+                <li class="list-contacts__item list-contacts__address">
+                  <a href="https://goo.gl/maps/hT4iuEoQxTR8T8yk9" target="_blank">Address: Minsk, Belarus</a>
                 </li>
                 <li class="list-contacts__item list-contacts__telegram ">
                   <a href="https://t.me/Yelltiy" target="_blank">Telergam: Yelltiy</a>
@@ -81,21 +87,6 @@
               </ul>
             </div>
           </section>
-
-          <section class="skills">
-            <div class="skills__container _container">
-              <h2 class="skills__title title" id="skills"><a href="#"> Skills</a></h2>
-              <ul class="skills__list list-skills">
-                <li class="list-skills__css list-skills"><a href="#"> CSS3</a></li>
-                <li class="list-skills__scss list-skills"><a href="#"> SCSS</a></li>
-                <li class="list-skills__bem list-skills"><a href="#"> BEM</a></li>
-                <li class="list-skills__git list-skills"><a href="#"> Git</a></li>
-                <li class="list-skills__js list-skills"><a href="#"> JavaScript</a></li>
-                <li class="list-skills__html list-skills"><a href="#"> HTML5</a></li>
-                <li class="list-skills__figma list-skills"><a href="#"> Figma</a></li>
-              </ul>
-            </div>
-          </section>
           <section class="education">
             <div class="education__container _container">
               <div class="education__body">
@@ -103,22 +94,34 @@
                 <div class="education__university">Belarusian Trade and Economics University of Consummer Cooperation
                 </div>
                 <div class="education__spec">Marketing. Promotional activities</div>
-                <div class="education__eng">English lvl: A2</div>
+                <div class="education__eng">English lvl: B1</div>
 
                 <!-- todo implement certificate -->
               </div>
             </div>
           </section>
-        </div>
-      </div>
-      <!-- END of triple merge block -->
-      </section>
-      <div class="code">
-        <div class="code__container _container">
-          <div class="code__body">
-            <h2 class="code__title title">Code example</h2>
-            <code class="code__code">
-<pre class="code-pre">
+          <section class="skills">
+            <div class="skills__container _container">
+              <h2 class="skills__title title" id="skills"><a href="#"> Skills</a></h2>
+              <ul class="skills__list skills">
+                <li class="list-skills__js skills__item"><a href="#"> JavaScript</a></li>
+                <li class="list-skills__ts skills__item"><a href="#"> TypeScript</a></li>
+                <li class="list-skills__html skills__item"><a href="#"> HTML5</a></li>
+                <li class="list-skills__css skills__item"><a href="#"> CSS3</a></li>
+                <li class="list-skills__git skills__item"><a href="#"> Git</a></li>
+                <li class="list-skills__scss skills__item"><a href="#"> SCSS</a></li>
+                <li class="list-skills__bem skills__item"><a href="#"> BEM</a></li>
+                <li class="list-skills__figma skills__item"><a href="#"> Figma</a></li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="code">
+            <div class="code__container _container">
+              <div class="code__body">
+                <h2 class="code__title title">Code example</h2>
+                <code class="code__code">
+    <pre class="code-pre">
 <span class="code__func">function</span> <span class="code__func-name">getLocalStorageLanguage</span><span class="code__yel-brackets">()</span> {
   <span class="code__if">if</span> (<span class="code__variable">localStorage</span>.<span class="code__func-name">getItem</span>(<span class="code__str">'language'</span>) == <span class="code__str">'ru'</span>) {
     <span class="code__variable2">langRu</span>.checked = <span class="code__bool">true</span>
@@ -128,12 +131,18 @@
     <span class="code__variable2">langEng</span>.checked = <span class="code__bool">true</span>
     <span class="code__func-name">settingsToEng()</span>
   } 
-} 
-</pre>
-            </code>
-          </div>
+}
+    </pre>
+                </code>
+              </div>
+            </div>
+          </section>
+
         </div>
       </div>
+      <!-- END of quatro merge block -->
+      </section>
+
       <!-- PROJECTS starts -->
       <section class="projects" id="projects">
         <div class="projects__container _container">
@@ -201,8 +210,6 @@
               </div>
             </div>
             <!--  -->
-
-            <!--  -->
           </div>
         </div>
       </section>
@@ -215,25 +222,25 @@
         <ul class="footer__list">
           <li class="footer__item">
             <a href="https://t.me/Yelltiy">
-              <img src="img/footer/telegram.svg" height="40" alt="">
+              <img src="img/contacts/telegram.svg" height="40" alt="telegram-icon">
             </a>
           </li>
           <li class="footer__item">
             <a href="mailto:lyadouskiy@gmail.com">
-              <img src="img/footer/Gmail.svg" height="30" alt="">
+              <img src="img/footer/gmail-footer.svg" height="40" alt="gmail-icon">
             </a>
           </li>
-          <li class="footer__item">
-            2022
+          <li class=" footer__item">
+            2023
           </li>
           <li class="footer__item">
             <a href="https://rs.school/js/">
-              <img src="img/footer/logo-rs.svg" height="40" alt="">
+              <img src="img/footer/logo-rs.svg" height="40" alt="rolling schools icon">
             </a>
           </li>
           <li class="footer__item">
             <a href="https://github.com/Lights0n">
-              <img src="img/footer/github.svg" height="40" alt="">
+              <img src="img/footer/github.svg" height="40" alt="github icon">
             </a>
           </li>
         </ul>
